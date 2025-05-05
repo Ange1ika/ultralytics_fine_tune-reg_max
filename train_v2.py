@@ -16,8 +16,8 @@ logging.basicConfig(level=logging.DEBUG)
 # os.environ["PYTORCH_CUDA_ALLOC_CONF"] = "expandable_segments:True"
 
 # # Пути
-custom_cfg_path = '/home/asad/Classification/YOLO_GRAVEL_train/ultralytics_fine_tune reg_max/ultralytics/ultralytics/cfg/models/11/yolo11x-seg.yaml'
-pretrained_ckpt_path = 'yolo11x-seg.pt'
+custom_cfg_path = '/home/asad/Classification/YOLO_GRAVEL_train/ultralytics_fine_tune reg_max/ultralytics/ultralytics/cfg/models/v9/yolov9e-seg.yaml'
+pretrained_ckpt_path = 'yolov9e-seg.pt'
 #ata_yaml = '/home/asad/Classification/YOLO_GRAVEL_train/GRAVEL/data.yaml'
 data_yaml = "/home/asad/stone.v14i.yolov11/GLOBAL_DATA/data.yaml"
 #data_yaml = "/home/asad/stone.v14i.yolov11/data.yaml"
@@ -64,7 +64,7 @@ try:
         task='segment',
         epochs=1000,
         imgsz=640,
-        batch=3,
+        batch=9,
         mask_ratio=4,
         device=[0, 1, 2],
         augment=True,

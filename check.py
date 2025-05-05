@@ -13,7 +13,7 @@ from ultralytics.nn.modules.head import Segment
 
 # Пути
 custom_cfg_path = '/home/asad/Classification/YOLO_GRAVEL_train/ultralytics_fine_tune reg_max/ultralytics/ultralytics/cfg/models/11/yolo11x-seg.yaml'
-model_path = '/home/asad/Classification/YOLO_GRAVEL_train/ultralytics_fine_tune reg_max/custom_yolov11x_regmax1_trained_GRAVEL.pt'
+model_path = '/home/asad/Classification/YOLO_GRAVEL_train/runs/segment/train34/weights/best.pt'
 folder_path = '/home/asad/Downloads/pipeline_tests_v.2.0/Data/sample/big_test'
 
 # Загрузка модели
